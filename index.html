@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Talleres Flores Ballester · Taller mecánico en Almassora</title>
+<meta name="description" content="Talleres Flores Ballester S.L. — Taller mecánico multimarca en Almassora (Castellón). Mecánica general, diagnosis computarizada, pre-ITV, chapa y pintura, neumáticos, frenos, climatización y electricidad. Pide cita.">
+<meta name="theme-color" content="#F7F6F3">
+<meta property="og:title" content="Talleres Flores Ballester · Almassora">
+<meta property="og:description" content="Ingeniería y precisión para tu vehículo en Almassora, Castellón.">
+<meta property="og:type" content="website">
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com/3.4.5"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#15171C',
+          muted: '#5B6170',
+          paper: '#F7F6F3',
+          line: '#E7E5E0',
+          brand: { DEFAULT: '#D92D27', soft: '#FDECEA', ink: '#A3201B' },
+          azure: { DEFAULT: '#2563EB', soft: '#E8F0FE', ink: '#1D4ED8' },
+          mint:  { DEFAULT: '#0F9F8F', soft: '#E2F5F2', ink: '#0B6F64' },
+          sun:   { DEFAULT: '#E59400', soft: '#FEF3DE', ink: '#8F5600' },
+          grape: { DEFAULT: '#7C5CFA', soft: '#EFEBFF', ink: '#5536C9' },
+          aqua:  { DEFAULT: '#0891B2', soft: '#E0F5FA', ink: '#0E7490' }
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+          body: ['Inter', 'system-ui', 'sans-serif']
+        }
+      }
+    }
+  };
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Talleres Flores Ballester S.L.",
+  "description": "Taller mecánico multimarca en Almassora (Castellón).",
+  "telephone": "+34 000 000 000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[Calle y número]",
+    "addressLocality": "Almassora",
+    "postalCode": "12550",
+    "addressRegion": "Castellón",
+    "addressCountry": "ES"
+  },
+  "areaServed": ["Almassora", "Castellón de la Plana", "Vila-real", "Borriol", "Benicàssim"]
+}
+</script>
+
+<style>
+  :root{
+    --paper:#F7F6F3; --ink:#15171C; --muted:#5B6170; --line:#E7E5E0;
+    --brand:#D92D27; --brand-dark:#BF241F; --brand-soft:#FDECEA;
+  }
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+  ::selection{background:var(--brand);color:#fff}
+  section[id]{scroll-margin-top:96px}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+
+  .eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+
+  /* Hero line masks */
+  .line{display:block;overflow:hidden;padding-bottom:.08em}
+  .line>span{display:inline-block;will-change:transform}
+  html.js .line>span{transform:translateY(110%)}
+  html.js [data-reveal],html.js .tl-step,html.js .hero-fade,html.js #heroVisual,html.js .hero-badge{opacity:0}
+
+  /* Buttons */
+  .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border-radius:999px;font-family:"Space Grotesk",sans-serif;font-weight:600;transition:background-color .25s, color .25s, border-color .25s, box-shadow .25s;will-change:transform}
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 10px 24px -12px rgba(217,45,39,.7)}
+  .btn-primary:hover{background:var(--brand-dark);box-shadow:0 14px 30px -12px rgba(217,45,39,.8)}
+  .btn-outline{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+  .btn-outline:hover{border-color:var(--ink)}
+  .btn .btn-inner{display:inline-flex;align-items:center;gap:.55rem;pointer-events:none}
+
+  /* Nav */
+  #nav{transition:box-shadow .3s, background-color .3s}
+  #nav.scrolled{background:rgba(255,255,255,.92);box-shadow:0 12px 30px -18px rgba(21,23,28,.25)}
+  .nav-link{position:relative;color:var(--muted);transition:color .25s}
+  .nav-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+  .nav-link:hover,.nav-link.is-current{color:var(--ink)}
+  .nav-link:hover::after,.nav-link.is-current::after{transform:scaleX(1)}
+  #mobileMenu{opacity:0;visibility:hidden;transition:opacity .35s, visibility .35s}
+  #mobileMenu.open{opacity:1;visibility:visible}
+
+  /* Hero visual */
+  .hero-visual{background:
+      radial-gradient(90% 70% at 15% 10%, #FDECEA 0%, rgba(253,236,234,0) 60%),
+      radial-gradient(80% 70% at 95% 95%, #E8F0FE 0%, rgba(232,240,254,0) 60%),
+      radial-gradient(60% 50% at 90% 10%, #FEF3DE 0%, rgba(254,243,222,0) 60%),
+      #fff}
+  #webgl{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .float-a{animation:floaty 6s ease-in-out infinite}
+  .float-b{animation:floaty 7s ease-in-out -2s infinite}
+  .float-c{animation:floaty 8s ease-in-out -4s infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+  /* Marquee */
+  .marquee{mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .marquee-track{display:flex;width:max-content;animation:marquee 40s linear infinite}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+
+  /* Service cards with 3D tilt */
+  .tilt{--c:#D92D27;--cs:#FDECEA;position:relative;border-radius:1.5rem;background:#fff;border:1px solid var(--line);
+    transform-style:preserve-3d;transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));
+    transition:transform .6s cubic-bezier(.2,.8,.2,1), box-shadow .4s, border-color .4s;will-change:transform}
+  .tilt.is-tilting{transition:transform .08s linear, box-shadow .4s, border-color .4s}
+  .tilt:hover{border-color:color-mix(in srgb, var(--c) 35%, var(--line));box-shadow:0 30px 60px -32px color-mix(in srgb, var(--c) 60%, transparent)}
+  .tilt .tilt-glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;
+    background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%), color-mix(in srgb, var(--c) 13%, transparent), transparent 60%)}
+  .tilt:hover .tilt-glare{opacity:1}
+  .tilt .tilt-content{position:relative;transform:translateZ(36px);transform-style:preserve-3d}
+  .tilt .icon-tile{transform:translateZ(20px)}
+  .tilt.tilt-feature{background:linear-gradient(160deg, var(--cs) 0%, #fff 62%)}
+  .icon-tile{display:grid;place-items:center;width:3rem;height:3rem;border-radius:1rem;background:var(--cs);color:var(--c)}
+  .svc-cta{color:var(--c)}
+  .chip{font-size:.75rem;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted)}
+
+  /* Timeline */
+  .tl-node{--c:#D92D27;transition:background-color .5s, border-color .5s, color .5s, box-shadow .5s}
+  .tl-step.is-active .tl-node{background:var(--c);border-color:var(--c);color:#fff;box-shadow:0 10px 24px -10px var(--c)}
+
+  /* Form */
+  .field{position:relative}
+  .field input,.field select{width:100%;background:var(--paper);border:1.5px solid transparent;border-radius:.9rem;padding:1.35rem 1rem .55rem;color:var(--ink);font-size:.95rem;transition:border-color .25s, box-shadow .25s, background-color .25s;appearance:none;-webkit-appearance:none}
+  .field select{padding-right:2.5rem;cursor:pointer}
+  .field label{position:absolute;left:1rem;top:1rem;font-size:.95rem;color:var(--muted);pointer-events:none;transition:all .2s cubic-bezier(.2,.8,.2,1)}
+  .field input:hover,.field select:hover{border-color:var(--line)}
+  .field input:focus,.field select:focus{outline:none;background:#fff;border-color:var(--brand);box-shadow:0 0 0 4px rgba(217,45,39,.12)}
+  .field input:focus+label,.field input:not(:placeholder-shown)+label,.field select+label{top:.45rem;font-size:.7rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
+  .field.invalid input,.field.invalid select{border-color:var(--brand);background:#fff}
+  .field .err{display:none;font-size:.78rem;color:var(--brand-dark);margin-top:.35rem;padding-left:.25rem}
+  .field.invalid .err{display:block}
+  .check-box{width:1.15rem;height:1.15rem;border-radius:.35rem;border:1.5px solid #C9C6BF;background:#fff;display:grid;place-items:center;flex:none;transition:all .2s}
+  #privacy:checked+.check-box{background:var(--brand);border-color:var(--brand)}
+  #privacy:checked+.check-box svg{opacity:1}
+  #privacy:focus-visible+.check-box{outline:2px solid var(--brand);outline-offset:2px}
+
+  .pulse-dot{box-shadow:0 0 0 0 rgba(217,45,39,.6);animation:pulse 1.8s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 8px rgba(217,45,39,0)}100%{box-shadow:0 0 0 0 rgba(217,45,39,0)}}
+
+  @media (max-width:767px){ body{padding-bottom:calc(76px + env(safe-area-inset-bottom))} }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .marquee-track,.pulse-dot,.float-a,.float-b,.float-c{animation:none}
+    html.js .line>span{transform:none}
+    html.js [data-reveal],html.js .tl-step,html.js .hero-fade,html.js #heroVisual,html.js .hero-badge{opacity:1}
+  }
+</style>
+</head>
+
+<body class="font-body antialiased">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 inset-x-0 z-50 px-4 pt-4">
+    <nav id="nav" class="mx-auto max-w-7xl rounded-2xl px-4 sm:px-6 h-16 flex items-center justify-between bg-white/75 backdrop-blur-xl border border-line" aria-label="Principal">
+      <a href="#inicio" class="flex items-center gap-3 group" aria-label="Flores Ballester, inicio">
+        <span class="grid place-items-center w-9 h-9 rounded-xl bg-brand text-white">
+          <svg viewBox="0 0 24 24" class="w-5 h-5 transition-transform duration-700 group-hover:rotate-180" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>
+          </svg>
+        </span>
+        <span class="leading-none">
+          <span class="block whitespace-nowrap font-display font-bold text-ink tracking-[.06em] text-[.85rem] sm:text-[.95rem]">FLORES BALLESTER</span>
+          <span class="block whitespace-nowrap text-[.62rem] font-medium tracking-[.16em] text-muted mt-1">TALLERES · ALMASSORA</span>
+        </span>
+      </a>
+
+      <ul class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <li><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li><a class="nav-link" href="#por-que">Por qué nosotros</a></li>
+        <li><a class="nav-link" href="#proceso">Proceso</a></li>
+        <li><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2">
+        <a data-cfg-tel href="tel:+34000000000" class="hidden md:inline-flex btn btn-outline text-sm px-4 py-2.5 magnetic">
+          <span class="btn-inner"><span class="w-2 h-2 rounded-full bg-brand pulse-dot"></span>Urgencias</span>
+        </a>
+        <a href="#contacto" class="btn btn-primary text-sm px-4 sm:px-5 py-2.5 magnetic">
+          <span class="btn-inner"><i data-lucide="calendar-check" class="w-4 h-4"></i><span class="hidden sm:inline">Cita previa</span><span class="sm:hidden">Cita</span></span>
+        </a>
+        <button id="menuBtn" class="lg:hidden grid place-items-center w-10 h-10 rounded-xl border border-line bg-white text-ink" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="fixed inset-0 z-[55] bg-paper lg:hidden" aria-hidden="true">
+    <button id="menuClose" class="absolute top-7 right-7 grid place-items-center w-10 h-10 rounded-xl border border-line bg-white text-ink" aria-label="Cerrar menú">
+      <i data-lucide="x" class="w-5 h-5"></i>
+    </button>
+    <nav class="h-full flex flex-col justify-center px-8 gap-1" aria-label="Móvil">
+      <span class="eyebrow mb-6">Menú</span>
+      <a class="mm-link flex items-center gap-4 font-display text-3xl font-semibold text-ink py-3" href="#servicios"><span class="w-2.5 h-2.5 rounded-full bg-brand"></span>Servicios</a>
+      <a class="mm-link flex items-center gap-4 font-display text-3xl font-semibold text-ink py-3" href="#por-que"><span class="w-2.5 h-2.5 rounded-full bg-azure"></span>Por qué nosotros</a>
+      <a class="mm-link flex items-center gap-4 font-display text-3xl font-semibold text-ink py-3" href="#proceso"><span class="w-2.5 h-2.5 rounded-full bg-mint"></span>Proceso</a>
+      <a class="mm-link flex items-center gap-4 font-display text-3xl font-semibold text-ink py-3" href="#contacto"><span class="w-2.5 h-2.5 rounded-full bg-sun"></span>Contacto</a>
+      <a data-cfg-tel href="tel:+34000000000" class="mm-link mt-8 btn btn-primary py-4 text-lg"><span class="btn-inner"><i data-lucide="phone" class="w-5 h-5"></i>Llamar ahora</span></a>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="relative overflow-hidden">
+      <div class="absolute -top-40 -left-40 w-[36rem] h-[36rem] rounded-full bg-brand-soft blur-3xl opacity-70 pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-20 -right-40 w-[30rem] h-[30rem] rounded-full bg-azure-soft blur-3xl opacity-80 pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-32 sm:pt-36 pb-16 sm:pb-24 grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <div class="lg:col-span-6">
+          <div class="hero-fade inline-flex items-center gap-2 rounded-full bg-white border border-line pl-1.5 pr-4 py-1.5 mb-8 text-sm text-muted">
+            <span class="grid place-items-center w-6 h-6 rounded-full bg-brand-soft text-brand"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i></span>
+            Taller multimarca · Almassora, Castellón
+          </div>
+
+          <h1 class="font-display font-bold text-ink leading-[1] tracking-tight text-[2.6rem] sm:text-6xl lg:text-[4.4rem]">
+            <span class="line"><span>Ingeniería y precisión</span></span>
+            <span class="line"><span>para tu vehículo</span></span>
+            <span class="line"><span>en <span class="relative inline-block text-brand">Almassora<svg class="absolute left-0 -bottom-2 w-full h-3 text-sun" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 50 2, 150 2, 198 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span>.</span></span>
+          </h1>
+
+          <p class="hero-fade mt-8 max-w-xl text-lg text-muted leading-relaxed">
+            En <strong class="text-ink font-semibold">Talleres Flores Ballester S.L.</strong> unimos el trato de un taller de confianza de toda la vida con equipos de diagnosis de última generación.
+          </p>
+
+          <div class="hero-fade mt-10 flex flex-col sm:flex-row gap-3">
+            <a href="#contacto" class="btn btn-primary px-7 py-4 text-base magnetic">
+              <span class="btn-inner">Solicitar presupuesto <i data-lucide="arrow-right" class="w-5 h-5"></i></span>
+            </a>
+            <a href="#servicios" class="btn btn-outline px-7 py-4 text-base magnetic">
+              <span class="btn-inner">Ver servicios</span>
+            </a>
+          </div>
+
+          <ul class="hero-fade mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-ink">
+            <li class="flex items-center gap-2"><span class="grid place-items-center w-6 h-6 rounded-full bg-mint-soft text-mint-ink"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>Garantía por escrito</li>
+            <li class="flex items-center gap-2"><span class="grid place-items-center w-6 h-6 rounded-full bg-azure-soft text-azure-ink"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>Presupuesto sin compromiso</li>
+            <li class="flex items-center gap-2"><span class="grid place-items-center w-6 h-6 rounded-full bg-sun-soft text-sun-ink"><i data-lucide="check" class="w-3.5 h-3.5"></i></span>Todas las marcas</li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div id="heroVisual" class="hero-visual relative aspect-square sm:aspect-[5/4] lg:aspect-square rounded-[2rem] border border-line overflow-hidden shadow-[0_40px_80px_-50px_rgba(21,23,28,.35)]">
+            <canvas id="webgl" aria-hidden="true"></canvas>
+
+            <div class="hero-badge absolute left-4 top-4 sm:left-6 sm:top-6">
+              <div class="float-a flex items-center gap-3 rounded-2xl bg-white/90 backdrop-blur border border-line px-3.5 py-2.5 shadow-[0_12px_30px_-18px_rgba(21,23,28,.4)]">
+                <span class="grid place-items-center w-9 h-9 rounded-xl bg-mint-soft text-mint-ink"><i data-lucide="shield-check" class="w-5 h-5"></i></span>
+                <span class="leading-tight"><span class="block text-sm font-semibold text-ink">Garantía total</span><span class="block text-xs text-muted">Piezas y mano de obra</span></span>
+              </div>
+            </div>
+
+            <div class="hero-badge absolute right-4 bottom-4 sm:right-6 sm:bottom-6">
+              <div class="float-b rounded-2xl bg-white/90 backdrop-blur border border-line px-4 py-3 shadow-[0_12px_30px_-18px_rgba(21,23,28,.4)]">
+                <span class="block font-display text-3xl font-bold text-brand leading-none">+<span data-cfg="yearsExperience">25</span></span>
+                <span class="block mt-1 text-xs text-muted">años en Almassora</span>
+              </div>
+            </div>
+
+            <div class="hero-badge absolute left-4 bottom-4 sm:left-6 sm:bottom-6 hidden sm:block">
+              <div class="float-c flex items-center gap-2 rounded-full bg-white/90 backdrop-blur border border-line px-3.5 py-2 text-xs font-medium text-ink">
+                <span class="w-2 h-2 rounded-full bg-mint"></span>Diagnosis multimarca
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="border-y border-line bg-white py-5 marquee overflow-hidden" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="flex items-center gap-3 pr-3">
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand"></span>Mecánica general</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-azure"></span>Diagnosis OBD</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-mint"></span>Pre-ITV</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-grape"></span>Chapa y pintura</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sun"></span>Neumáticos</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand"></span>Frenos</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-aqua"></span>Aire acondicionado</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sun"></span>Electricidad</span>
+        </span>
+        <span class="flex items-center gap-3 pr-3">
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand"></span>Mecánica general</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-azure"></span>Diagnosis OBD</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-mint"></span>Pre-ITV</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-grape"></span>Chapa y pintura</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sun"></span>Neumáticos</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand"></span>Frenos</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-aqua"></span>Aire acondicionado</span>
+          <span class="chip !text-sm !px-4 !py-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-sun"></span>Electricidad</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-14">
+          <div data-reveal>
+            <span class="eyebrow">Servicios</span>
+            <h2 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-ink tracking-tight leading-[1.05]">Todo lo que tu coche necesita,<br class="hidden sm:block"> bajo un mismo techo.</h2>
+          </div>
+          <p data-reveal class="max-w-sm text-muted leading-relaxed">Del cambio de aceite a una reparación de carrocería completa. Trabajamos con todas las marcas y te explicamos cada intervención antes de hacerla.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-5">
+          <!-- 01 -->
+          <article data-reveal class="tilt tilt-feature lg:col-span-7 lg:row-span-2" style="--c:#D92D27;--cs:#FDECEA">
+            <div class="tilt-glare"></div>
+            <div class="tilt-content h-full p-7 sm:p-9 flex flex-col">
+              <div class="flex items-start justify-between">
+                <span class="icon-tile"><i data-lucide="wrench" class="w-6 h-6"></i></span>
+                <span class="text-sm font-medium text-muted">01</span>
+              </div>
+              <h3 class="mt-auto pt-14 font-display text-3xl sm:text-4xl font-bold text-ink leading-tight">Mecánica general y<br>mantenimiento integral</h3>
+              <p class="mt-4 max-w-md text-muted leading-relaxed">Revisiones sin perder la garantía del fabricante, distribución, embrague, motor y caja de cambios. Mantenimiento preventivo para que tu coche no te deje tirado.</p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="chip">Aceite y filtros</span><span class="chip">Distribución</span><span class="chip">Embrague</span><span class="chip">Motor</span><span class="chip">Revisión oficial</span>
+              </div>
+              <button type="button" data-service="mecanica" class="svc-cta mt-7 self-start inline-flex items-center gap-2 text-sm font-semibold hover:underline underline-offset-4">Pedir cita para este servicio <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article data-reveal class="tilt lg:col-span-5" style="--c:#2563EB;--cs:#E8F0FE">
+            <div class="tilt-glare"></div>
+            <div class="tilt-content h-full p-7 flex flex-col">
+              <div class="flex items-start justify-between">
+                <span class="icon-tile"><i data-lucide="cpu" class="w-6 h-6"></i></span>
+                <span class="text-sm font-medium text-muted">02</span>
+              </div>
+              <h3 class="mt-7 font-display text-2xl font-bold text-ink leading-tight">Diagnóstico computarizado multimarca</h3>
+              <p class="mt-3 text-muted leading-relaxed text-[.95rem]">Lectura de centralitas y averías con equipos de última generación. Encontramos el fallo antes de cambiar piezas.</p>
+              <button type="button" data-service="diagnosis" class="svc-cta mt-auto pt-6 self-start inline-flex items-center gap-2 text-sm font-semibold hover:underline underline-offset-4">Pedir diagnosis <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article data-reveal class="tilt lg:col-span-5" style="--c:#0F9F8F;--cs:#E2F5F2">
+            <div class="tilt-glare"></div>
+            <div class="tilt-content h-full p-7 flex flex-col">
+              <div class="flex items-start justify-between">
+                <span class="icon-tile"><i data-lucide="clipboard-check" class="w-6 h-6"></i></span>
+                <span class="text-sm font-medium text-muted">03</span>
+              </div>
+              <h3 class="mt-7 font-display text-2xl font-bold text-ink leading-tight">Revisión pre-ITV y gestión</h3>
+              <p class="mt-3 text-muted leading-relaxed text-[.95rem]">Revisamos los puntos de inspección y, si lo prefieres, llevamos nosotros el coche a la ITV. Sin sustos ni segundas visitas.</p>
+              <button type="button" data-service="itv" class="svc-cta mt-auto pt-6 self-start inline-flex items-center gap-2 text-sm font-semibold hover:underline underline-offset-4">Preparar mi ITV <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article data-reveal class="tilt lg:col-span-4" style="--c:#7C5CFA;--cs:#EFEBFF">
+            <div class="tilt-glare"></div>
+            <div class="tilt-content h-full p-7 flex flex-col">
+              <div class="flex items-start justify-between">
+                <span class="icon-tile"><i data-lucide="paintbrush" class="w-6 h-6"></i></span>
+                <span class="text-sm font-medium text-muted">04</span>
+              </div>
+              <h3 class="mt-7 font-display text-2xl font-bold text-ink leading-tight">Chapa, pintura y carrocería</h3>
+              <p class="mt-3 text-muted leading-relaxed text-[.95rem]">Reparación de golpes, igualación de color y acabados de precisión. Gestionamos el parte con tu aseguradora.</p>
+              <button type="button" data-service="chapa" class="svc-cta mt-auto pt-6 self-start inline-flex items-center gap-2 text-sm font-semibold hover:underline underline-offset-4">Valorar daños <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article data-reveal class="tilt lg:col-span-4" style="--c:#C27C00;--cs:#FEF3DE">
+            <div class="tilt-glare"></div>
+            <div class="tilt-content h-full p-7 flex flex-col">
+              <div class="flex items-start justify-between">
+                <span class="icon-tile"><i data-lucide="disc" class="w-6 h-6"></i></span>
+                <span class="text-sm font-medium text-muted">05</span>
+              </div>
+              <h3 class="mt-7 font-display text-2xl font-bold text-ink leading-tight">Neumáticos, frenos y suspensión</h3>
+              <p class="mt-3 text-muted leading-relaxed text-[.95rem]">Montaje, equilibrado y alineación. Pastillas, discos y amortiguadores: tu seguridad, al milímetro.</p>
+              <button type="button" data-service="neumaticos" class="svc-cta mt-auto pt-6 self-start inline-flex items-center gap-2 text-sm font-semibold hover:underline underline-offset-4">Revisar mi seguridad <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+          </article>
+
+          <!-- 06 -->
+          <article data-reveal class="tilt md:col-span-2 lg:col-span-4" style="--c:#0891B2;--cs:#E0F5FA">
+            <div class="tilt-glare"></div>
+            <div class="tilt-content h-full p-7 flex flex-col">
+              <div class="flex items-start justify-between">
+                <span class="icon-tile"><i data-lucide="snowflake" class="w-6 h-6"></i></span>
+                <span class="text-sm font-medium text-muted">06</span>
+              </div>
+              <h3 class="mt-7 font-display text-2xl font-bold text-ink leading-tight">Climatización y electricidad</h3>
+              <p class="mt-3 text-muted leading-relaxed text-[.95rem]">Carga y reparación de aire acondicionado, baterías, alternadores, arranque e iluminación. Imprescindible en el verano de Castellón.</p>
+              <button type="button" data-service="clima" class="svc-cta mt-auto pt-6 self-start inline-flex items-center gap-2 text-sm font-semibold hover:underline underline-offset-4">Revisar climatización <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section id="por-que" class="py-20 sm:py-28 bg-white border-y border-line">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="lg:col-span-5">
+          <span data-reveal class="eyebrow block">Por qué elegirnos</span>
+          <h2 data-reveal class="mt-4 font-display text-4xl sm:text-5xl font-bold text-ink tracking-tight leading-[1.05]">Confianza de barrio.<br><span class="text-azure">Precisión de laboratorio.</span></h2>
+          <p data-reveal class="mt-6 text-muted leading-relaxed">Somos un taller de Almassora, para la gente de Almassora y de toda la Plana. Te atiende siempre alguien que conoce tu coche y su historial, y que te llama antes de tocar nada que no estuviera en el presupuesto.</p>
+          <ul class="mt-8 space-y-4">
+            <li data-reveal class="flex gap-4 items-start"><span class="grid place-items-center w-8 h-8 rounded-lg bg-mint-soft text-mint-ink flex-none"><i data-lucide="check" class="w-4 h-4"></i></span><span class="pt-1">Sin sorpresas en la factura: lo que se aprueba es lo que se paga.</span></li>
+            <li data-reveal class="flex gap-4 items-start"><span class="grid place-items-center w-8 h-8 rounded-lg bg-mint-soft text-mint-ink flex-none"><i data-lucide="check" class="w-4 h-4"></i></span><span class="pt-1">Te enseñamos las piezas sustituidas y te explicamos el porqué.</span></li>
+            <li data-reveal class="flex gap-4 items-start"><span class="grid place-items-center w-8 h-8 rounded-lg bg-mint-soft text-mint-ink flex-none"><i data-lucide="check" class="w-4 h-4"></i></span><span class="pt-1">Revisión oficial sin perder la garantía del fabricante.</span></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-2 gap-4 sm:gap-5">
+          <div data-reveal class="rounded-3xl bg-brand-soft p-5 sm:p-8">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-white text-brand"><i data-lucide="gauge" class="w-5 h-5"></i></span>
+            <div class="mt-6 sm:mt-10 font-display text-[1.6rem] sm:text-5xl xl:text-6xl font-bold text-brand-ink whitespace-nowrap tabular-nums">+<span class="counter" data-count-key="yearsExperience">0</span></div>
+            <p class="mt-2 text-sm text-ink/70">Años de experiencia en Almassora</p>
+          </div>
+          <div data-reveal class="rounded-3xl bg-azure-soft p-5 sm:p-8">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-white text-azure"><i data-lucide="car" class="w-5 h-5"></i></span>
+            <div class="mt-6 sm:mt-10 font-display text-[1.6rem] sm:text-5xl xl:text-6xl font-bold text-azure-ink whitespace-nowrap tabular-nums">+<span class="counter" data-count-key="vehiclesRepaired" data-format="thousands">0</span></div>
+            <p class="mt-2 text-sm text-ink/70">Vehículos reparados</p>
+          </div>
+          <div data-reveal class="rounded-3xl bg-mint-soft p-5 sm:p-8">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-white text-mint-ink"><i data-lucide="shield-check" class="w-5 h-5"></i></span>
+            <div class="mt-6 sm:mt-10 font-display text-[1.6rem] sm:text-5xl xl:text-6xl font-bold text-mint-ink whitespace-nowrap tabular-nums"><span class="counter" data-count="100">0</span>%</div>
+            <p class="mt-2 text-sm text-ink/70">Garantía en piezas y mano de obra</p>
+          </div>
+          <div data-reveal class="rounded-3xl bg-sun-soft p-5 sm:p-8">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-white text-sun-ink"><i data-lucide="handshake" class="w-5 h-5"></i></span>
+            <div class="mt-6 sm:mt-10 font-display text-[1.6rem] sm:text-5xl xl:text-6xl font-bold text-sun-ink whitespace-nowrap">1:1</div>
+            <p class="mt-2 text-sm text-ink/70">Atención personalizada, de tú a tú</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" class="py-20 sm:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-2xl mx-auto mb-14 sm:mb-20">
+          <span data-reveal class="eyebrow block">Proceso</span>
+          <h2 data-reveal class="mt-4 font-display text-4xl sm:text-5xl font-bold text-ink tracking-tight">Cuatro pasos. Cero sorpresas.</h2>
+          <p data-reveal class="mt-5 text-muted">Así trabajamos con cada coche que entra por la puerta.</p>
+        </div>
+
+        <div id="timeline" class="relative">
+          <div class="hidden md:block absolute left-[12.5%] right-[12.5%] top-7 h-[3px] rounded-full bg-line" aria-hidden="true">
+            <div id="tlLineH" class="h-full w-full rounded-full origin-left scale-x-0" style="background:linear-gradient(90deg,#D92D27,#E59400,#0F9F8F,#2563EB)"></div>
+          </div>
+          <div class="md:hidden absolute left-[27px] top-7 bottom-7 w-[3px] rounded-full bg-line" aria-hidden="true">
+            <div id="tlLineV" class="w-full h-full rounded-full origin-top scale-y-0" style="background:linear-gradient(180deg,#D92D27,#E59400,#0F9F8F,#2563EB)"></div>
+          </div>
+
+          <ol class="relative grid md:grid-cols-4 gap-10 md:gap-6">
+            <li class="tl-step flex md:flex-col md:items-center md:text-center gap-6">
+              <span class="tl-node relative z-10 grid place-items-center w-14 h-14 flex-none rounded-full border-2 border-line bg-white font-display font-bold text-muted" style="--c:#D92D27">01</span>
+              <div>
+                <h3 class="font-display text-xl font-semibold text-ink">Recepción y diagnóstico</h3>
+                <p class="mt-2 text-sm text-muted leading-relaxed md:max-w-[15rem] md:mx-auto">Escuchamos lo que le pasa a tu coche y lo comprobamos con diagnosis electrónica y prueba en carretera.</p>
+              </div>
+            </li>
+            <li class="tl-step flex md:flex-col md:items-center md:text-center gap-6">
+              <span class="tl-node relative z-10 grid place-items-center w-14 h-14 flex-none rounded-full border-2 border-line bg-white font-display font-bold text-muted" style="--c:#E59400">02</span>
+              <div>
+                <h3 class="font-display text-xl font-semibold text-ink">Presupuesto transparente</h3>
+                <p class="mt-2 text-sm text-muted leading-relaxed md:max-w-[15rem] md:mx-auto">Cerrado, detallado y sin compromiso. No empezamos nada sin tu aprobación.</p>
+              </div>
+            </li>
+            <li class="tl-step flex md:flex-col md:items-center md:text-center gap-6">
+              <span class="tl-node relative z-10 grid place-items-center w-14 h-14 flex-none rounded-full border-2 border-line bg-white font-display font-bold text-muted" style="--c:#0F9F8F">03</span>
+              <div>
+                <h3 class="font-display text-xl font-semibold text-ink">Reparación certificada</h3>
+                <p class="mt-2 text-sm text-muted leading-relaxed md:max-w-[15rem] md:mx-auto">Piezas de calidad original o equivalente y protocolos del fabricante.</p>
+              </div>
+            </li>
+            <li class="tl-step flex md:flex-col md:items-center md:text-center gap-6">
+              <span class="tl-node relative z-10 grid place-items-center w-14 h-14 flex-none rounded-full border-2 border-line bg-white font-display font-bold text-muted" style="--c:#2563EB">04</span>
+              <div>
+                <h3 class="font-display text-xl font-semibold text-ink">Entrega a tiempo</h3>
+                <p class="mt-2 text-sm text-muted leading-relaxed md:max-w-[15rem] md:mx-auto">En la fecha acordada, con factura detallada y garantía por escrito.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- CTA band -->
+        <div data-reveal class="relative mt-20 sm:mt-24 overflow-hidden rounded-[2rem] px-6 py-10 sm:px-12 sm:py-14 text-white" style="background:linear-gradient(120deg,#D92D27 0%,#E8502C 55%,#F07A2E 100%)">
+          <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-white/10" aria-hidden="true"></div>
+          <div class="absolute right-24 -bottom-24 w-56 h-56 rounded-full bg-white/10" aria-hidden="true"></div>
+          <div class="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+            <div>
+              <p class="font-display text-2xl sm:text-4xl font-bold leading-tight">¿Ruido raro, testigo encendido<br class="hidden sm:block"> o ITV a la vista?</p>
+              <p class="mt-3 text-white/85">Cuéntanoslo hoy y te damos una primera valoración sin compromiso.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <a data-cfg-tel href="tel:+34000000000" class="btn px-6 py-3.5 border-2 border-white/60 text-white hover:bg-white/10 magnetic"><span class="btn-inner"><i data-lucide="phone" class="w-4 h-4"></i><span data-cfg="phone">+34 000 000 000</span></span></a>
+              <a href="#contacto" class="btn px-6 py-3.5 bg-white text-brand-ink hover:bg-white/90 magnetic"><span class="btn-inner">Pedir cita <i data-lucide="arrow-right" class="w-4 h-4"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 sm:py-28 bg-white border-t border-line">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="mb-12" data-reveal>
+          <span class="eyebrow">Cita previa</span>
+          <h2 class="mt-4 font-display text-4xl sm:text-5xl font-bold text-ink tracking-tight leading-[1.05]">Reserva tu cita en menos de un minuto.</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-5">
+          <!-- FORM + HORARIO -->
+          <div class="lg:col-span-7 flex flex-col gap-5">
+            <div data-reveal class="relative overflow-hidden rounded-3xl border border-line bg-white p-6 sm:p-10 shadow-[0_30px_60px_-45px_rgba(21,23,28,.35)]">
+              <form id="bookingForm" novalidate>
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div class="field">
+                    <input id="f-name" name="nombre" type="text" placeholder=" " autocomplete="name" required minlength="2">
+                    <label for="f-name">Nombre</label>
+                    <p class="err">Dinos cómo te llamas.</p>
+                  </div>
+                  <div class="field">
+                    <input id="f-phone" name="telefono" type="tel" placeholder=" " autocomplete="tel" inputmode="tel" required>
+                    <label for="f-phone">Teléfono</label>
+                    <p class="err">Introduce un teléfono válido (9 dígitos).</p>
+                  </div>
+                  <div class="field sm:col-span-2">
+                    <input id="f-car" name="vehiculo" type="text" placeholder=" " required minlength="3">
+                    <label for="f-car">Matrícula / Marca y modelo</label>
+                    <p class="err">Indica la matrícula o el modelo del vehículo.</p>
+                  </div>
+                  <div class="field sm:col-span-2">
+                    <select id="f-service" name="servicio" required>
+                      <option value="" disabled selected>Selecciona un servicio…</option>
+                      <option value="mecanica">Mecánica general y mantenimiento</option>
+                      <option value="diagnosis">Diagnóstico computarizado</option>
+                      <option value="itv">Revisión pre-ITV y gestión</option>
+                      <option value="chapa">Chapa, pintura y carrocería</option>
+                      <option value="neumaticos">Neumáticos, frenos y suspensión</option>
+                      <option value="clima">Climatización y electricidad</option>
+                      <option value="otro">Otro / No lo sé</option>
+                    </select>
+                    <label for="f-service">Servicio requerido</label>
+                    <i data-lucide="chevron-down" class="absolute right-4 w-4 h-4 text-muted pointer-events-none" style="top:1.6rem"></i>
+                    <p class="err">Elige el servicio que necesitas.</p>
+                  </div>
+                </div>
+
+                <label class="mt-6 flex items-start gap-3 text-sm text-muted cursor-pointer">
+                  <input id="privacy" type="checkbox" class="sr-only" required>
+                  <span class="check-box mt-0.5"><svg viewBox="0 0 24 24" class="w-3 h-3 opacity-0 transition-opacity" fill="none" stroke="#fff" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+                  <span>Acepto que Talleres Flores Ballester S.L. use mis datos para gestionar la cita, según la política de privacidad.</span>
+                </label>
+                <p id="privacyErr" class="hidden text-xs text-brand-ink mt-2 pl-7">Necesitamos tu consentimiento para contactarte.</p>
+
+                <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+                  <button type="submit" id="submitBtn" class="btn btn-primary px-8 py-4 text-base magnetic">
+                    <span class="btn-inner"><span id="submitLabel">Solicitar cita</span><i data-lucide="send" class="w-4 h-4"></i></span>
+                  </button>
+                  <p class="text-xs text-muted flex items-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5 text-brand"></i>Te llamamos en horario de taller para confirmar.</p>
+                </div>
+              </form>
+
+              <div id="formSuccess" class="hidden absolute inset-0 grid place-items-center p-8 text-center bg-white rounded-3xl" role="status" aria-live="polite">
+                <div>
+                  <div class="mx-auto grid place-items-center w-16 h-16 rounded-full bg-mint-soft text-mint-ink"><i data-lucide="check" class="w-8 h-8"></i></div>
+                  <p class="mt-6 font-display text-2xl font-bold text-ink">¡Solicitud recibida!</p>
+                  <p class="mt-3 text-muted max-w-sm mx-auto">Gracias, <span id="successName"></span>. Te llamaremos lo antes posible para confirmar día y hora.</p>
+                  <button id="formReset" type="button" class="mt-6 btn btn-outline px-6 py-3 text-sm"><span class="btn-inner">Enviar otra solicitud</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div data-reveal class="rounded-3xl bg-paper p-6 sm:p-7">
+              <div class="flex items-center justify-between gap-4">
+                <p class="flex items-center gap-2 font-display font-semibold text-ink"><span class="grid place-items-center w-8 h-8 rounded-lg bg-sun-soft text-sun-ink"><i data-lucide="clock" class="w-4 h-4"></i></span>Horario</p>
+                <span id="openBadge" class="text-xs font-semibold px-3 py-1 rounded-full"></span>
+              </div>
+              <ul id="hoursList" class="mt-4 divide-y divide-line text-sm"></ul>
+            </div>
+          </div>
+
+          <!-- LOCATION -->
+          <div class="lg:col-span-5">
+            <div data-reveal class="h-full flex flex-col overflow-hidden rounded-3xl border border-line bg-white">
+              <div class="relative flex-1 min-h-[12rem] sm:min-h-[14rem] bg-paper">
+                <iframe id="mapFrame" class="absolute inset-0 w-full h-full" title="Mapa de Almassora, Castellón" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <span class="absolute left-4 bottom-4 inline-flex items-center gap-2 rounded-full bg-brand px-3 py-1.5 text-xs font-semibold text-white shadow-lg pointer-events-none"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i>Almassora · Castellón</span>
+              </div>
+              <div class="p-6 sm:p-7 space-y-5">
+                <div class="flex gap-4">
+                  <span class="grid place-items-center w-10 h-10 rounded-xl bg-brand-soft text-brand flex-none"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-muted">Dirección</p>
+                    <p class="mt-1 text-ink font-medium"><span data-cfg="street">[Calle y número]</span></p>
+                    <p class="text-muted text-sm"><span data-cfg="postal">12550</span> <span data-cfg="city">Almassora</span>, <span data-cfg="province">Castellón</span></p>
+                    <a id="directionsLink" href="https://www.google.com/maps/search/?api=1&query=Almassora%2C%20Castell%C3%B3n" target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:underline underline-offset-4">Cómo llegar <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></a>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <span class="grid place-items-center w-10 h-10 rounded-xl bg-azure-soft text-azure flex-none"><i data-lucide="phone" class="w-5 h-5"></i></span>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-muted">Teléfono</p>
+                    <a data-cfg-tel href="tel:+34000000000" class="mt-1 block text-ink text-lg font-display font-semibold hover:text-brand transition-colors"><span data-cfg="phone">+34 000 000 000</span></a>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <span class="grid place-items-center w-10 h-10 rounded-xl bg-mint-soft text-mint-ink flex-none"><i data-lucide="mail" class="w-5 h-5"></i></span>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider text-muted">Email</p>
+                    <a data-cfg-mail href="mailto:info@ejemplo.com" class="mt-1 block text-ink font-medium hover:text-brand transition-colors break-all"><span data-cfg="email">info@ejemplo.com</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-paper border-t border-line">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid gap-12 md:grid-cols-12">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3">
+          <span class="grid place-items-center w-9 h-9 rounded-xl bg-brand text-white">
+            <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+          </span>
+          <span class="font-display font-bold text-ink tracking-[.06em]">FLORES BALLESTER</span>
+        </div>
+        <p class="mt-6 text-muted max-w-sm leading-relaxed">Taller mecánico multimarca en Almassora. Mecánica, diagnosis, pre-ITV, chapa y pintura, neumáticos, climatización y electricidad.</p>
+        <p class="mt-4 text-sm text-muted">Damos servicio en Almassora, Castellón de la Plana, Vila-real, Borriol, Benicàssim y alrededores.</p>
+      </div>
+      <div class="md:col-span-3">
+        <p class="font-display font-semibold text-ink mb-5">Servicios</p>
+        <ul class="space-y-2.5 text-sm text-muted">
+          <li><a class="hover:text-ink transition-colors" href="#servicios">Mecánica general</a></li>
+          <li><a class="hover:text-ink transition-colors" href="#servicios">Diagnosis multimarca</a></li>
+          <li><a class="hover:text-ink transition-colors" href="#servicios">Pre-ITV</a></li>
+          <li><a class="hover:text-ink transition-colors" href="#servicios">Chapa y pintura</a></li>
+          <li><a class="hover:text-ink transition-colors" href="#servicios">Neumáticos y frenos</a></li>
+          <li><a class="hover:text-ink transition-colors" href="#servicios">Climatización</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4">
+        <p class="font-display font-semibold text-ink mb-5">Contacto</p>
+        <ul class="space-y-3 text-sm text-muted">
+          <li class="flex gap-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-brand flex-none"></i><span><span data-cfg="street">[Calle y número]</span>, <span data-cfg="postal">12550</span> <span data-cfg="city">Almassora</span> (<span data-cfg="province">Castellón</span>)</span></li>
+          <li class="flex gap-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-brand flex-none"></i><a data-cfg-tel href="tel:+34000000000" class="hover:text-ink"><span data-cfg="phone">+34 000 000 000</span></a></li>
+          <li class="flex gap-3"><i data-lucide="mail" class="w-4 h-4 mt-0.5 text-brand flex-none"></i><a data-cfg-mail href="mailto:info@ejemplo.com" class="hover:text-ink break-all"><span data-cfg="email">info@ejemplo.com</span></a></li>
+        </ul>
+        <a href="#contacto" class="mt-6 btn btn-primary px-6 py-3 text-sm magnetic"><span class="btn-inner">Pedir cita <i data-lucide="arrow-right" class="w-4 h-4"></i></span></a>
+      </div>
+    </div>
+    <div class="border-t border-line">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-muted">
+        <p>© <span id="year"></span> Talleres Flores Ballester S.L. Todos los derechos reservados.</p>
+        <p class="flex gap-5">
+          <a data-cfg-legal="aviso" href="#" class="hover:text-ink">Aviso legal</a>
+          <a data-cfg-legal="privacidad" href="#" class="hover:text-ink">Privacidad</a>
+          <a data-cfg-legal="cookies" href="#" class="hover:text-ink">Cookies</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="md:hidden fixed inset-x-0 bottom-0 z-50 px-3 pt-3 pb-[calc(.75rem+env(safe-area-inset-bottom))] bg-white/90 backdrop-blur-xl border-t border-line">
+    <div class="grid grid-cols-2 gap-2">
+      <a data-cfg-tel href="tel:+34000000000" class="btn btn-outline py-3.5 text-sm"><span class="btn-inner"><i data-lucide="phone" class="w-4 h-4"></i>Llamar</span></a>
+      <a href="#contacto" class="btn btn-primary py-3.5 text-sm"><span class="btn-inner"><i data-lucide="calendar-check" class="w-4 h-4"></i>Pedir cita</span></a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+
+  <script>
+  /* =========================================================
+     CONFIGURACIÓN — EDITA AQUÍ LOS DATOS REALES DEL TALLER
+     ========================================================= */
+  const CONFIG = {
+    phone: '+34 000 000 000',        // Teléfono tal y como se muestra
+    phoneHref: '+34000000000',       // Teléfono para el enlace tel: (sin espacios)
+    email: 'info@ejemplo.com',
+    street: '[Calle y número]',
+    postal: '12550',
+    city: 'Almassora',
+    province: 'Castellón',
+    mapsQuery: 'Almassora, Castellón', // Cámbialo por la dirección exacta para centrar el mapa
+    yearsExperience: 25,             // Valor de ejemplo: pon el real
+    vehiclesRepaired: 10000,         // Valor de ejemplo: pon el real
+    formEndpoint: '',                // URL que recibe el formulario (POST JSON). Vacío = modo demo
+    whatsapp: '',                    // Ej. '34600000000'. Si hay número y no hay endpoint, la cita se envía por WhatsApp
+    legal: { aviso: '#', privacidad: '#', cookies: '#' },
+    // Día: 0 = domingo … 6 = sábado. Horario de ejemplo: ajústalo.
+    hours: [
+      { label: 'Lunes – Viernes', days: [1,2,3,4,5], ranges: [['08:00','13:30'], ['15:30','19:00']] },
+      { label: 'Sábado',          days: [6],         ranges: [] },
+      { label: 'Domingo',         days: [0],         ranges: [] }
+    ]
+  };
+
+  (function(){
+    'use strict';
+    const hasGSAP = typeof window.gsap !== 'undefined';
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const isMobile = window.innerWidth < 768;
+    const animate = hasGSAP && !reduceMotion;
+    if (!animate) document.documentElement.classList.remove('js');
+
+    /* ---------- Config binding ---------- */
+    document.querySelectorAll('[data-cfg]').forEach(el => {
+      const k = el.getAttribute('data-cfg');
+      if (CONFIG[k] !== undefined) el.textContent = CONFIG[k];
+    });
+    document.querySelectorAll('[data-cfg-tel]').forEach(el => el.setAttribute('href', 'tel:' + CONFIG.phoneHref));
+    document.querySelectorAll('[data-cfg-mail]').forEach(el => el.setAttribute('href', 'mailto:' + CONFIG.email));
+    document.querySelectorAll('[data-cfg-legal]').forEach(el => el.setAttribute('href', CONFIG.legal[el.getAttribute('data-cfg-legal')] || '#'));
+    const mapQ = encodeURIComponent(CONFIG.mapsQuery);
+    document.getElementById('mapFrame').src = 'https://www.google.com/maps?q=' + mapQ + '&z=14&output=embed';
+    document.getElementById('directionsLink').href = 'https://www.google.com/maps/search/?api=1&query=' + mapQ;
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ---------- Hours + open now ---------- */
+    (function renderHours(){
+      const list = document.getElementById('hoursList');
+      const now = new Date(); const day = now.getDay();
+      const mins = now.getHours() * 60 + now.getMinutes();
+      const toMin = s => { const [h, m] = s.split(':').map(Number); return h * 60 + m; };
+      let open = false;
+      CONFIG.hours.forEach(row => {
+        const today = row.days.includes(day);
+        if (today) row.ranges.forEach(([a, b]) => { if (mins >= toMin(a) && mins < toMin(b)) open = true; });
+        const li = document.createElement('li');
+        li.className = 'flex justify-between gap-4 py-3' + (today ? ' text-ink font-semibold' : ' text-muted');
+        const l = document.createElement('span'); l.textContent = row.label + (today ? ' · hoy' : '');
+        const r = document.createElement('span'); r.className = 'text-right tabular-nums';
+        r.textContent = row.ranges.length ? row.ranges.map(x => x.join(' – ')).join(' / ') : 'Cerrado';
+        li.append(l, r); list.appendChild(li);
+      });
+      const badge = document.getElementById('openBadge');
+      badge.textContent = open ? '● Abierto ahora' : '● Cerrado ahora';
+      badge.className += open ? ' bg-mint-soft text-mint-ink' : ' bg-white text-muted border border-line';
+    })();
+
+    /* ---------- Icons ---------- */
+    if (window.lucide) window.lucide.createIcons();
+
+    /* ---------- Mobile menu ---------- */
+    const menu = document.getElementById('mobileMenu');
+    const menuBtn = document.getElementById('menuBtn');
+    function setMenu(open){
+      menu.classList.toggle('open', open);
+      menu.setAttribute('aria-hidden', String(!open));
+      menuBtn.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open && animate) gsap.fromTo('.mm-link', { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: .06, duration: .5, delay: .1, ease: 'power3.out' });
+    }
+    menuBtn.addEventListener('click', () => setMenu(true));
+    document.getElementById('menuClose').addEventListener('click', () => setMenu(false));
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('open')) setMenu(false); });
+
+    /* ---------- Navbar state ---------- */
+    const nav = document.getElementById('nav');
+    function navState(){ nav.classList.toggle('scrolled', window.scrollY > 30); }
+    window.addEventListener('scroll', navState, { passive: true }); navState();
+
+    /* ---------- Service CTA -> preselect + go to form ---------- */
+    const select = document.getElementById('f-service');
+    document.querySelectorAll('.svc-cta').forEach(b => b.addEventListener('click', () => {
+      select.value = b.dataset.service;
+      select.closest('.field').classList.remove('invalid');
+      document.getElementById('contacto').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      setTimeout(() => document.getElementById('f-name').focus({ preventScroll: true }), reduceMotion ? 0 : 900);
+    }));
+
+    /* ---------- 3D tilt cards ---------- */
+    if (finePointer && !reduceMotion) {
+      document.querySelectorAll('.tilt').forEach(card => {
+        let raf = null;
+        card.addEventListener('pointerenter', () => card.classList.add('is-tilting'));
+        card.addEventListener('pointermove', e => {
+          if (raf) cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(() => {
+            const r = card.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width;
+            const y = (e.clientY - r.top) / r.height;
+            card.style.setProperty('--rx', ((0.5 - y) * 8).toFixed(2) + 'deg');
+            card.style.setProperty('--ry', ((x - 0.5) * 10).toFixed(2) + 'deg');
+            card.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+            card.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+          });
+        });
+        card.addEventListener('pointerleave', () => {
+          if (raf) cancelAnimationFrame(raf);
+          card.classList.remove('is-tilting');
+          card.style.setProperty('--rx', '0deg'); card.style.setProperty('--ry', '0deg');
+        });
+      });
+    }
+
+    /* ---------- Magnetic buttons ---------- */
+    if (finePointer && animate) {
+      document.querySelectorAll('.magnetic').forEach(btn => {
+        const xTo = gsap.quickTo(btn, 'x', { duration: .5, ease: 'power3.out' });
+        const yTo = gsap.quickTo(btn, 'y', { duration: .5, ease: 'power3.out' });
+        btn.addEventListener('pointermove', e => {
+          const r = btn.getBoundingClientRect();
+          xTo((e.clientX - (r.left + r.width / 2)) * 0.2);
+          yTo((e.clientY - (r.top + r.height / 2)) * 0.3);
+        });
+        btn.addEventListener('pointerleave', () => gsap.to(btn, { x: 0, y: 0, duration: .8, ease: 'elastic.out(1, .4)' }));
+      });
+    }
+
+    /* ---------- Form ---------- */
+    const form = document.getElementById('bookingForm');
+    const success = document.getElementById('formSuccess');
+    const privacy = document.getElementById('privacy');
+    const privacyErr = document.getElementById('privacyErr');
+    const phoneOk = v => /^(\+?34)?[\s-]?[6789](\s?-?\d){8}$/.test(v.trim());
+    function validateField(input){
+      const f = input.closest('.field');
+      let ok = input.checkValidity();
+      if (input.id === 'f-phone') ok = phoneOk(input.value);
+      f.classList.toggle('invalid', !ok);
+      return ok;
+    }
+    ['f-name','f-phone','f-car','f-service'].forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener('blur', () => { if (el.value) validateField(el); });
+      el.addEventListener('input', () => { if (el.closest('.field').classList.contains('invalid')) validateField(el); });
+      el.addEventListener('change', () => validateField(el));
+    });
+    privacy.addEventListener('change', () => privacyErr.classList.toggle('hidden', privacy.checked));
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const fields = ['f-name','f-phone','f-car','f-service'].map(id => document.getElementById(id));
+      const results = fields.map(validateField);
+      const priv = privacy.checked; privacyErr.classList.toggle('hidden', priv);
+      if (results.includes(false) || !priv) {
+        const firstBad = fields[results.indexOf(false)] || privacy;
+        firstBad.focus();
+        if (animate) gsap.fromTo(form, { x: -8 }, { x: 0, duration: .5, ease: 'elastic.out(1,.3)' });
+        return;
+      }
+      const data = {
+        nombre: fields[0].value.trim(), telefono: fields[1].value.trim(),
+        vehiculo: fields[2].value.trim(), servicio: fields[3].options[fields[3].selectedIndex].text
+      };
+      const btn = document.getElementById('submitBtn'); const label = document.getElementById('submitLabel');
+      btn.disabled = true; label.textContent = 'Enviando…';
+      try {
+        if (CONFIG.formEndpoint) {
+          const res = await fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+        } else if (CONFIG.whatsapp) {
+          const msg = `Hola, quiero pedir cita.\nNombre: ${data.nombre}\nTeléfono: ${data.telefono}\nVehículo: ${data.vehiculo}\nServicio: ${data.servicio}`;
+          window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+        } else {
+          await new Promise(r => setTimeout(r, 700));
+        }
+        document.getElementById('successName').textContent = data.nombre.split(' ')[0];
+        success.classList.remove('hidden');
+        if (animate) gsap.fromTo(success, { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .45, ease: 'power3.out' });
+      } catch (err) {
+        label.textContent = 'Error. Llámanos';
+        setTimeout(() => { label.textContent = 'Solicitar cita'; }, 3000);
+      } finally {
+        btn.disabled = false;
+        if (label.textContent === 'Enviando…') label.textContent = 'Solicitar cita';
+      }
+    });
+    document.getElementById('formReset').addEventListener('click', () => {
+      form.reset(); success.classList.add('hidden');
+      form.querySelectorAll('.field').forEach(f => f.classList.remove('invalid'));
+    });
+
+    /* ---------- Counters (values) ---------- */
+    function formatNum(n, fmt){ return fmt === 'thousands' ? Math.round(n).toLocaleString('es-ES') : String(Math.round(n)); }
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(el => {
+      el.dataset.target = el.dataset.countKey ? CONFIG[el.dataset.countKey] : Number(el.dataset.count);
+    });
+
+    /* =========================================================
+       THREE.JS — Núcleo mecánico en una tarjeta clara
+       ========================================================= */
+    const scene3d = { intro: { v: animate ? 0 : 1 } };
+    (function initWebGL(){
+      const wrap = document.getElementById('heroVisual');
+      const canvas = document.getElementById('webgl');
+      if (!window.THREE) return;
+      let renderer;
+      try {
+        renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
+      } catch (err) { canvas.style.display = 'none'; return; }
+
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
+      renderer.outputEncoding = THREE.sRGBEncoding;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.0;
+      renderer.setClearColor(0x000000, 0);
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
+
+      /* bright studio environment with coloured softboxes */
+      const pmrem = new THREE.PMREMGenerator(renderer);
+      const envScene = new THREE.Scene();
+      envScene.background = new THREE.Color(0xd9d7d2);
+      const panelGeo = new THREE.PlaneGeometry(1, 1);
+      function softbox(hex, k, pos, scl){
+        const m = new THREE.MeshBasicMaterial({ color: new THREE.Color(hex).multiplyScalar(k), side: THREE.DoubleSide });
+        const p = new THREE.Mesh(panelGeo, m);
+        p.position.set(pos[0], pos[1], pos[2]); p.scale.set(scl[0], scl[1], 1); p.lookAt(0, 0, 0);
+        envScene.add(p);
+      }
+      softbox(0xffffff, 3.2, [0, 7, 1], [10, 6]);
+      softbox(0xffffff, 1.8, [0, 0, 8], [10, 4]);
+      softbox(0xff5a4a, 1.6, [-7, 0.5, 2], [2.5, 8]);
+      softbox(0x5b8cff, 1.6, [7, -0.5, 2], [2.5, 8]);
+      softbox(0xffc04d, 1.2, [0, -7, -1], [7, 3]);
+      const envRT = pmrem.fromScene(envScene, 0.04);
+      scene.environment = envRT.texture;
+      envScene.traverse(o => { if (o.material) o.material.dispose(); });
+      pmrem.dispose();
+
+      /* materials */
+      const gloss = (hex, metal) => new THREE.MeshPhysicalMaterial({ color: hex, metalness: metal, roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.08 });
+      const matCeramic = new THREE.MeshPhysicalMaterial({ color: 0xffffff, metalness: 0, roughness: 0.28, clearcoat: 1, clearcoatRoughness: 0.1, flatShading: true });
+      const matChrome = new THREE.MeshStandardMaterial({ color: 0xdfe2e6, metalness: 1, roughness: 0.16 });
+      const matRed = gloss(0xd92d27, 0.15);
+      const matBlue = gloss(0x2563eb, 0.15);
+      const matAmber = gloss(0xf2a516, 0.15);
+      const matMint = gloss(0x0f9f8f, 0.2);
+      const matGrape = gloss(0x7c5cfa, 0.15);
+
+      const rig = new THREE.Group(); scene.add(rig);
+
+      const core = new THREE.Mesh(new THREE.IcosahedronGeometry(1.15, 1), matCeramic);
+      rig.add(core);
+      const cage = new THREE.LineSegments(
+        new THREE.EdgesGeometry(new THREE.IcosahedronGeometry(1.6, 1)),
+        new THREE.LineBasicMaterial({ color: 0x15171c, transparent: true, opacity: 0.12 })
+      );
+      rig.add(cage);
+
+      /* gyro rings */
+      const rings = [];
+      [
+        { r: 2.0, tube: 0.075, mat: matRed,   tilt: [Math.PI / 2.3, 0, 0],      speed: 0.35 },
+        { r: 2.5, tube: 0.06,  mat: matBlue,  tilt: [0.35, Math.PI / 3.2, 0],    speed: -0.25 },
+        { r: 2.95, tube: 0.045, mat: matAmber, tilt: [-0.6, -0.4, 0.3],         speed: 0.18 }
+      ].forEach((d, i) => {
+        const pivot = new THREE.Group(); pivot.rotation.set(d.tilt[0], d.tilt[1], d.tilt[2]);
+        const spinner = new THREE.Group();
+        spinner.add(new THREE.Mesh(new THREE.TorusGeometry(d.r, d.tube, 24, 160), d.mat));
+        if (i === 1) {
+          const n = 20;
+          const bolts = new THREE.InstancedMesh(new THREE.BoxGeometry(0.08, 0.2, 0.16), matChrome, n);
+          const dummy = new THREE.Object3D();
+          for (let b = 0; b < n; b++) {
+            const a = b / n * Math.PI * 2;
+            dummy.position.set(Math.cos(a) * d.r, Math.sin(a) * d.r, 0);
+            dummy.rotation.set(0, 0, a); dummy.updateMatrix(); bolts.setMatrixAt(b, dummy.matrix);
+          }
+          spinner.add(bolts);
+        }
+        if (i === 0) {
+          for (let k = 0; k < 3; k++) {
+            const a = k / 3 * Math.PI * 2;
+            const node = new THREE.Mesh(new THREE.SphereGeometry(0.14, 24, 24), matCeramic);
+            node.position.set(Math.cos(a) * d.r, Math.sin(a) * d.r, 0);
+            spinner.add(node);
+          }
+        }
+        pivot.add(spinner); rig.add(pivot);
+        rings.push({ spinner, speed: d.speed });
+      });
+
+      /* gears */
+      function gearShape(teeth, rOuter, rRoot, holeR){
+        const s = new THREE.Shape(); const step = Math.PI * 2 / teeth;
+        for (let i = 0; i < teeth; i++) {
+          const a = i * step;
+          [[rRoot, a], [rOuter, a + step * 0.18], [rOuter, a + step * 0.46], [rRoot, a + step * 0.64]].forEach(([r, ang], j) => {
+            const x = Math.cos(ang) * r, y = Math.sin(ang) * r;
+            if (i === 0 && j === 0) s.moveTo(x, y); else s.lineTo(x, y);
+          });
+          const next = (i + 1) * step;
+          s.lineTo(Math.cos(next) * rRoot, Math.sin(next) * rRoot);
+        }
+        s.closePath();
+        const hole = new THREE.Path(); hole.absarc(0, 0, holeR, 0, Math.PI * 2, true); s.holes.push(hole);
+        for (let k = 0; k < 5; k++) {
+          const a = k / 5 * Math.PI * 2, rr = (holeR + rRoot) / 2;
+          const p = new THREE.Path(); p.absarc(Math.cos(a) * rr, Math.sin(a) * rr, (rRoot - holeR) * 0.22, 0, Math.PI * 2, true); s.holes.push(p);
+        }
+        return s;
+      }
+      const extrude = { depth: 0.16, bevelEnabled: true, bevelThickness: 0.03, bevelSize: 0.025, bevelSegments: 2, curveSegments: 18 };
+      const gearAGeo = new THREE.ExtrudeGeometry(gearShape(18, 1.0, 0.87, 0.28), extrude); gearAGeo.center();
+      const gearBGeo = new THREE.ExtrudeGeometry(gearShape(12, 0.68, 0.56, 0.2), extrude); gearBGeo.center();
+      const gears = new THREE.Group();
+      const gearA = new THREE.Mesh(gearAGeo, matChrome);
+      const gearB = new THREE.Mesh(gearBGeo, matMint);
+      const centerDist = 0.935 + 0.62;
+      gearB.position.set(Math.cos(-0.55) * centerDist, Math.sin(-0.55) * centerDist, 0);
+      gearB.rotation.z = Math.PI / 12;
+      gears.add(gearA, gearB);
+      gears.position.set(-2.5, -2.1, -1.2);
+      gears.rotation.set(-0.5, 0.55, 0.1);
+      gears.scale.setScalar(0.8);
+      rig.add(gears);
+
+      /* floating hex nuts in brand colours */
+      const nutGeo = new THREE.CylinderGeometry(0.2, 0.2, 0.13, 6, 1);
+      const nutMats = [matRed, matBlue, matAmber, matMint, matGrape, matChrome];
+      const nuts = [];
+      for (let i = 0; i < (isMobile ? 6 : 10); i++) {
+        const n = new THREE.Mesh(nutGeo, nutMats[i % nutMats.length]);
+        const a = (i / 10) * Math.PI * 2 + Math.random() * 0.4, rr = 3.3 + Math.random() * 1.2;
+        n.position.set(Math.cos(a) * rr, Math.sin(a) * rr * 0.8, -0.5 - Math.random() * 1.5);
+        n.rotation.set(Math.random() * 6, Math.random() * 6, Math.random() * 6);
+        n.scale.setScalar(0.6 + Math.random() * 0.6);
+        n.userData = { sx: (Math.random() - .5) * .8, sy: (Math.random() - .5) * .8, fy: Math.random() * Math.PI * 2, by: n.position.y };
+        rig.add(n); nuts.push(n);
+      }
+
+      /* soft contact shadow */
+      const sCan = document.createElement('canvas'); sCan.width = sCan.height = 128;
+      const sx = sCan.getContext('2d'); const sg = sx.createRadialGradient(64, 64, 0, 64, 64, 64);
+      sg.addColorStop(0, 'rgba(21,23,28,0.28)'); sg.addColorStop(1, 'rgba(21,23,28,0)');
+      sx.fillStyle = sg; sx.fillRect(0, 0, 128, 128);
+      const shadow = new THREE.Mesh(new THREE.PlaneGeometry(7, 7), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(sCan), transparent: true, depthWrite: false, toneMapped: false }));
+      shadow.rotation.x = -Math.PI / 2; shadow.position.y = -3.4;
+      scene.add(shadow);
+
+      /* lights */
+      scene.add(new THREE.HemisphereLight(0xffffff, 0xe9e6df, 0.9));
+      const key = new THREE.DirectionalLight(0xffffff, 1.1); key.position.set(3, 6, 6); scene.add(key);
+      const lightRed = new THREE.PointLight(0xff4a3a, 1.6, 14, 1.6); scene.add(lightRed);
+      const lightBlue = new THREE.PointLight(0x4d7dff, 1.4, 14, 1.6); scene.add(lightBlue);
+
+      /* sizing */
+      let baseZ = 12;
+      function resize(){
+        const w = wrap.clientWidth, h = wrap.clientHeight;
+        if (!w || !h) return;
+        renderer.setSize(w, h, false);
+        camera.aspect = w / h;
+        baseZ = 12.5 * Math.max(1, 1 / camera.aspect);
+        camera.updateProjectionMatrix();
+      }
+      resize();
+      if (window.ResizeObserver) new ResizeObserver(resize).observe(wrap); else window.addEventListener('resize', resize);
+
+      /* interaction */
+      const st = { tmx: 0, tmy: 0, mx: 0, my: 0, hero: 0 };
+      window.addEventListener('pointermove', e => {
+        st.tmx = e.clientX / window.innerWidth * 2 - 1;
+        st.tmy = -(e.clientY / window.innerHeight * 2 - 1);
+      }, { passive: true });
+      const motion = reduceMotion ? 0.25 : 1;
+      const lerp = (a, b, t) => a + (b - a) * t;
+      const clock = new THREE.Clock();
+
+      function tick(){
+        const dt = Math.min(clock.getDelta(), 0.05);
+        const t = clock.elapsedTime;
+        st.mx = lerp(st.mx, st.tmx, 0.05);
+        st.my = lerp(st.my, st.tmy, 0.05);
+        st.hero = lerp(st.hero, Math.min(window.scrollY / window.innerHeight, 1), 0.08);
+
+        rig.scale.setScalar(Math.max(scene3d.intro.v, 0.0001) * 0.92);
+        rig.rotation.y = st.mx * 0.45 + st.hero * 1.6;
+        rig.rotation.x = -st.my * 0.22 + st.hero * 0.5;
+        rig.position.y = Math.sin(t * 0.8) * 0.08 * motion;
+
+        core.rotation.x += dt * 0.18 * motion; core.rotation.y += dt * 0.24 * motion;
+        cage.rotation.y -= dt * 0.1 * motion;
+        rings.forEach(r => { r.spinner.rotation.z += dt * r.speed * motion; });
+        gearA.rotation.z += dt * 0.45 * motion;
+        gearB.rotation.z -= dt * 0.45 * motion * (18 / 12);
+        nuts.forEach(n => {
+          n.rotation.x += dt * n.userData.sx * motion; n.rotation.y += dt * n.userData.sy * motion;
+          n.position.y = n.userData.by + Math.sin(t * 0.6 + n.userData.fy) * 0.2 * motion;
+        });
+        shadow.material.opacity = 0.75 + Math.sin(t * 0.8) * 0.1;
+
+        lightRed.position.set(lerp(lightRed.position.x, st.mx * 4.5, 0.06), lerp(lightRed.position.y, st.my * 3, 0.06), 3.5);
+        lightBlue.position.set(lerp(lightBlue.position.x, -st.mx * 4.5, 0.04), lerp(lightBlue.position.y, -st.my * 3, 0.04), 3);
+
+        camera.position.set(lerp(camera.position.x, st.mx * 0.4, 0.05), 0.6 + st.my * 0.25, baseZ);
+        camera.lookAt(0, -0.2, 0);
+        renderer.render(scene, camera);
+      }
+
+      /* render only while the card is on screen */
+      let inView = true, raf = 0;
+      function loop(){
+        raf = 0;
+        if (!inView || document.hidden) return;
+        tick();
+        raf = requestAnimationFrame(loop);
+      }
+      function start(){ if (!raf) { clock.getDelta(); raf = requestAnimationFrame(loop); } }
+      if (window.IntersectionObserver) {
+        new IntersectionObserver(([e]) => { inView = e.isIntersecting; if (inView) start(); }, { rootMargin: '80px' }).observe(wrap);
+      }
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) start(); });
+      start();
+    })();
+
+    /* =========================================================
+       GSAP — Intro, reveals, contadores, timeline, menú activo
+       ========================================================= */
+    function startIntro(){
+      if (!animate) { scene3d.intro.v = 1; return; }
+      const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
+      tl.to('.line > span', { y: 0, duration: 1.1, stagger: 0.08 }, 0)
+        .to('.hero-fade', { opacity: 1, duration: .9, stagger: .07, ease: 'power2.out' }, .35)
+        .from('.hero-fade', { y: 18, duration: .9, stagger: .07, ease: 'power3.out', clearProps: 'transform' }, .35)
+        .fromTo('#heroVisual', { opacity: 0, scale: .96 }, { opacity: 1, scale: 1, duration: 1.2, ease: 'expo.out', clearProps: 'transform' }, .15)
+        .to(scene3d.intro, { v: 1, duration: 2, ease: 'expo.out' }, .25)
+        .fromTo('.hero-badge', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .8, stagger: .12, ease: 'back.out(1.7)', clearProps: 'transform' }, .8);
+    }
+    let introStarted = false;
+    function kick(){ if (introStarted) return; introStarted = true; startIntro(); }
+    if (document.readyState === 'complete') kick(); else window.addEventListener('load', kick);
+    setTimeout(kick, 1500);
+
+    const sectionIds = ['servicios', 'por-que', 'proceso', 'contacto'];
+    const navLinks = document.querySelectorAll('.nav-link');
+    const steps = Array.from(document.querySelectorAll('.tl-step'));
+    const lineH = document.getElementById('tlLineH');
+    const lineV = document.getElementById('tlLineV');
+
+    function setCurrent(id){
+      navLinks.forEach(a => a.classList.toggle('is-current', id !== '' && a.getAttribute('href') === '#' + id));
+    }
+    function runCounters(){
+      counters.forEach(el => {
+        const target = Number(el.dataset.target);
+        if (!animate) { el.textContent = formatNum(target, el.dataset.format); return; }
+        const obj = { n: 0 };
+        gsap.to(obj, { n: target, duration: 2.2, ease: 'power3.out', onUpdate: () => { el.textContent = formatNum(obj.n, el.dataset.format); } });
+      });
+    }
+    function runTimeline(){
+      if (!animate) {
+        steps.forEach(s => s.classList.add('is-active'));
+        lineH.style.transform = 'none'; lineV.style.transform = 'none';
+        return;
+      }
+      const tl = gsap.timeline({ delay: .2 });
+      tl.fromTo(lineH, { scaleX: 0 }, { scaleX: 1, duration: 2.6, ease: 'power1.inOut' }, 0)
+        .fromTo(lineV, { scaleY: 0 }, { scaleY: 1, duration: 2.6, ease: 'power1.inOut' }, 0);
+      steps.forEach((s, i) => tl.call(() => s.classList.add('is-active'), null, i * 0.8));
+    }
+
+    if (hasGSAP) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      sectionIds.forEach(id => {
+        const sec = document.getElementById(id);
+        if (animate) {
+          const items = sec.querySelectorAll('[data-reveal], .tl-step');
+          const cards = sec.querySelectorAll('.tilt');
+          ScrollTrigger.create({
+            trigger: sec, start: 'top 78%', once: true,
+            onEnter: () => {
+              gsap.fromTo(items, { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: .9, stagger: .06, ease: 'power3.out', clearProps: 'transform' });
+              if (cards.length) gsap.fromTo(cards, { rotateX: 10, transformPerspective: 1000 }, { rotateX: 0, duration: 1.1, stagger: .07, ease: 'power3.out', clearProps: 'transform' });
+            }
+          });
+        }
+        ScrollTrigger.create({
+          trigger: sec, start: 'top 50%', end: 'bottom 50%',
+          onToggle: self => { if (self.isActive) setCurrent(id); }
+        });
+      });
+      ScrollTrigger.create({
+        trigger: '#inicio', start: 'top top', end: 'bottom 50%',
+        onToggle: self => { if (self.isActive) setCurrent(''); }
+      });
+      ScrollTrigger.create({ trigger: '#por-que', start: 'top 78%', once: true, onEnter: runCounters });
+      ScrollTrigger.create({ trigger: '#timeline', start: 'top 78%', once: true, onEnter: runTimeline });
+
+      window.addEventListener('load', () => ScrollTrigger.refresh());
+    } else {
+      runCounters();
+      runTimeline();
+    }
+  })();
+  </script>
+</body>
+</html>
